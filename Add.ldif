@@ -1,0 +1,27 @@
+# Unidad organizativa usuarios Rafa
+dn: ou=usuarios ,dc=rafa,dc=com
+objectClass: organizationalUnit
+ou: usuarios
+
+# Unidad organizativa grupos
+dn: ou=grupos ,dc=rafa,dc=com
+objectClass: organizationalUnit
+ou: grupos
+
+#Usuarios Rafa en la ud. organizativa usuarios
+dn: uid=rafa,ou=grupos,dc=rafa,dc=com
+objectClass: inetOrgPerson
+uid: rafa
+sn: antorcha
+cn: rafa
+mail: rafa@rafa.com
+userPassword: 1234
+
+#Usuarios Ruben en la ud. organizativa usuarios
+dn: uid=ruben,ou=grupos,dc=ruben,dc=com
+objectClass: inetOrgPerson
+uid: ruben
+sn: antorcha
+cn: ruben
+mail: ruben@rafa.com
+userPassword: 1234
